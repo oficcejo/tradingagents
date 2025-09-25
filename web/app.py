@@ -1673,8 +1673,7 @@ def render_batch_analysis_page():
                         st.error(msg)
             with col_b:
                 if st.button("🧮 查看当前计算样例"):
-                    from datetime import datetime
-                    now = datetime.now()
+                    now = datetime.datetime.now()
                     st.caption(f"当前时间: {now.strftime('%Y-%m-%d %H:%M')}  计算结果示例: {(expected_password(now, mc))}")
             return
     except Exception as e:

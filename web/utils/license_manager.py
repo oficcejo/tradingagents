@@ -32,13 +32,13 @@ def _save_license(data: dict) -> None:
 
 
 def _generate_machine_code() -> str:
-    # 使用 MAC 地址 与 主机名 （仅数字）
+    # 使用 MAC 地址 与 主机名 生成稳定可读的机器码（仅数字）
     try:
         mac_int = uuid.getnode()
         host = os.environ.get('COMPUTERNAME') or os.environ.get('HOSTNAME') or 'HOST'
         base_num = abs(hash(str(mac_int) + host))
         code = str(base_num)
-        # 取最后 10 位作为，全部是数字
+        # 取最后 10 位作为机器码，全部是数字
         return code[-10:]
     except Exception:
         return '0000000000'
@@ -67,7 +67,7 @@ def expected_password(now: datetime, machine_code: str) -> int:
 
 
 def verify_and_activate(input_password: str) -> Tuple[bool, str]:
-    """校验密码。
+    """校验密码并激活。
     返回：(是否成功, 提示信息)
     """
     data = _load_license()
@@ -77,10 +77,10 @@ def verify_and_activate(input_password: str) -> Tuple[bool, str]:
         if str(input_password).strip() == str(exp):
             data['activated'] = True
             _save_license(data)
-            return True, '成功'
+            return True, '激活成功'
         else:
-            return False, 'none'
+            return False, '激活码错误'
     except Exception as e:
-        return False, f'异常: {e}'
+        return False, f'激活异常: {e}'
 
 
