@@ -14,7 +14,7 @@
 
 感谢 [Tauric Research](https://github.com/TauricResearch) 团队创造的革命性多智能体交易框架 [TradingAgents](https://github.com/TauricResearch/TradingAgents)！
 感谢hsliuping/TradingAgents-CN（https://github.com/hsliuping/TradingAgents-CN）团队完善中文版本，增强版本性能
-
+另开发TradingAgents-cn运营版，增加股票批量分析，增加会员管理功能，增加会员点数功能，项目地址https://github.com/oficcejo/tradingagents-cn-plus
 
 
 ## 🆕版本 v0.1.15 二开增加内容
