@@ -21,6 +21,7 @@
 ### 🤖 除原版功能外，增加批量分析股票板块，可批量依次分析多个股票，大大节约精力和时间
 ### 📚 初次使用批量分析板块要求绑定机器码，高手可在程序中找到，怕麻烦的请star后把机器码发到邮箱ws3101001@126.com,第一时间回复
 ### 🤖 安装方法参见原版，水平有限，如有疏漏请勿见怪！
+### 最新开发TradingAgents-cn-plus运营版，除以上功能外，增加会员管理功能，增加会员点数功能，可用于运营收费https://github.com/oficcejo/tradingagents-cn-plus
 <img width="1910" height="923" alt="1" src="https://github.com/user-attachments/assets/4b3b5247-482c-43de-a2cb-069d26cb2e78" />
 <img width="1910" height="923" alt="2" src="https://github.com/user-attachments/assets/4e344f7e-bc8a-42d2-9aaa-96bdbe1858a9" />
 <img width="1910" height="923" alt="3" src="https://github.com/user-attachments/assets/8a114d47-4502-49db-8570-bc253b107c37" />
